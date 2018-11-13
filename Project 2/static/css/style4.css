@@ -1,0 +1,139 @@
+/* .iframeContainer {
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+} */
+
+
+html,
+.body {
+  /* background: linear-gradient(rgba(0, 177, 255, 0.24), rgba(0, 28, 80, 0.78)) !important; */
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  box-sizing:  border-box;
+}
+
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  padding: 15px;
+  font: 12px sans-serif;
+  text-align: center;
+  color: white;
+  background: blue;
+  border: 0;
+  border-radius: 10px;
+}
+
+
+.navbar {
+  padding: 5px;
+  margin: 0;
+  font-size: 14px;
+  background:rgb(0, 28, 80) !important;
+}
+
+.loader {
+  margin-top: 50px;
+}
+
+.nav-player {
+  position: absolute;
+  bottom: 5px;
+  left: 160px;
+  width: 35px;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/soccerbackground.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: 140%;
+}
+
+.hero h1 {
+  margin-top: 40px;
+  font-size: 0.1rem;
+  color:white;
+  animation: title 1.2s forwards linear;
+}
+
+.hero h3 {
+  margin-top: 0px;
+  font-size: 0.1rem;
+  color:white;
+  animation: title 1.2s forwards linear;
+}
+
+.soccer {
+  background: url(http://upload.wikimedia.org/wikipedia/en/e/ec/Soccer_ball.svg);
+  background-size: 100px 100px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  -webkit-animation:roll 4.5s;
+  -moz-animation:roll 4.5s;
+  animation:roll 4.5s;
+}
+
+@-moz-keyframes roll {  
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:1000px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+@-webkit-keyframes roll { 
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:1000px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+
+@keyframes roll { 
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:1000px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+
+.world-cup {
+  color: #82AE6F;
+  text-align: center;
+}
+
+  /* keyframe animations which will be used to animate the title */
+  @keyframes title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 7.5rem;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes smaller-title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 5.5rem;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes subtitle {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

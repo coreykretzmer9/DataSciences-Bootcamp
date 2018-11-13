@@ -1,0 +1,50 @@
+/* .jumbotron {
+    background-image:url('../images/soccer.jpg');
+    height:300px;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-size: 100% 100%;
+    border-bottom:1px solid #ff6a00
+  }
+  .jumbotron .container {
+    position:relative;
+    top:50px;
+  }
+
+  .text-center {
+    text-align:center;
+    padding:10px;
+    color: White
+  } */
+
+  html,
+  .body {
+    background: linear-gradient(rgba(0, 177, 255, 0.24), rgba(0, 28, 80, 0.78)) !important;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    box-sizing:  border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html,body{overflow-x: hidden;}
+
+
+.navbar {
+  padding: 5px;
+  margin: 0;
+  font-size: 14px;
+  background:rgb(0, 28, 80) !important;
+}
+
+
+.nav-player {
+  position: absolute;
+  bottom: 5px;
+  /* left: 160px; */
+  width: 35px;
+  color: white;
+}
+

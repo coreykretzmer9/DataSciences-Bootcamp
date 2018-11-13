@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Soccer Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<style>
+  body {
+    background-image: url("../static/images/stadium2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+
+<!-- <body background="../static/images/stadium2.jpg" background-size="cover" background-repeat="no-repeat"> -->
+ <body> 
+  <nav class="navbar navbar-default" style="background-color: #2b3e50">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="col-md-1"></div>
+        <a class="navbar-brand" href="table">
+          <img class="nav-player" src="../static/images/soccer32 - Copy.gif" style="width: 3%"></a>
+      </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/"  style="color:white">Home</a></li>
+            <li><a href="table" style="color:white">Table</a></li>
+            <li><a href="scatter" style="color:white">Plots</a></li>
+            <li><a href="histograms" style="color:white">Histograms</a></li>
+          </ul>
+        </div>
+
+
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="background: linear-gradient(rgba(0, 177, 255, 0.24), rgba(0, 28, 80, 0.78));">
+          <img class="image" src="..\static\images\soccer.jpg" style="width:100%">
+        <h1 style="color:white">Soccer Analysis</h1>
+        <p style="color:white">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h5>SELECT Sample:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Sample Player</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div id="myDiv"></div>
+      </div>
+      <div class="col-md-1">
+        <button onclick=location=URL>Refresh</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="bubble"></div>
+    </div>
+  </div>
+
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script type="text/javascript">
+    // flask give us this variable. This is used in the js file
+    var nameList = {{rez| tojson}};
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="..\static\js\app.js"></script>
+
+</body>
+
+</html>

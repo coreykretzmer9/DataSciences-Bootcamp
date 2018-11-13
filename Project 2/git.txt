@@ -1,0 +1,9 @@
+git pull (master)
+-make changes
+git add .
+git stash
+
+git pull
+git stash apply
+git commit -m"message here"
+git push
